@@ -14,7 +14,7 @@ app.get("/video", (req, res) => {
 		res.status(404).send("Missing Range Header!");
 	}
 
-	const videoPath = "D:\\TV\\To Catch A Predator\\To Catch a Predator In The Beginning.mp4";
+	const videoPath = "D:\\TV\\To Catch A Predator\\To Catch a Predator In The Beginning.mp4"; // Replace with your own video path or make it dynamic
 	const videoSize = fs.statSync(videoPath).size;
 
 	const CHUNK_SIZE = 5 * 10 ** 6;
